@@ -100,7 +100,7 @@ function showCard({
     <ul class="params">
             <li class="params-item">
                 <img src="./img/storm.png" alt="">
-                <span>Скорость ветра: ${wind_s}</span>
+                <span>Скорость ветра в км/ч: ${wind_s}</span>
             </li>
             <li class="params-item">
                 <img src="./img/cardinal-points.png" alt="">
