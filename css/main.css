@@ -196,3 +196,63 @@ body {
     color: #2e7695;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        width: 70%;
+        row-gap: 20px;
+        background-color: unset;
+    }
+
+    .input {
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .params {
+        flex-direction: column;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+
+    .params-item {
+        /* justify-content: center; */
+        width: unset;
+    }
+    .params-item span {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-weather {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media (max-width: 376px) {
+    .title {
+        font-size: 30px;
+    }
+    .input {
+        width: 240px;
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .card-value {
+        font-size: 80px;
+    }
+}
