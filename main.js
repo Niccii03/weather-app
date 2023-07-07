@@ -1,11 +1,10 @@
 import conditions from "./conditions.js";
 
 const apiKey = "741eef21717043149f391816230607";
-
 const form = document.querySelector("#form");
 const input = document.querySelector("#inputCity");
-
 const header = document.querySelector(".header");
+
 form.onsubmit = async function (e) {
     e.preventDefault();
     let city = input.value.trim();
@@ -40,7 +39,7 @@ form.onsubmit = async function (e) {
                 : info.languages[23]["night_text"],
             imgPath: imgPath,
             feelslike: data.current.feelslike_c,
-            time: data.current.last_updated.slice(10),
+            time: data.location.localtime.slice(10),
             wind_s: data.current.wind_kph,
             wind_dir: data.current.wind_dir,
             pressure: data.current.pressure_mb,
@@ -138,5 +137,6 @@ async function getWeather(city) {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
+
     return data;
 }
